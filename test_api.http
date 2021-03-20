@@ -1,0 +1,58 @@
+# API endpoints testing
+
+# User Model 
+
+# Getting all users
+GET http://restfulapi.com/users
+###
+
+# Getting a single user
+GET http://restfulapi.com/users/5555
+###
+
+# Creating a user
+POST http://restfulapi.com/users
+content-type: application/json
+
+# {
+#     "name": "Kapil Tamang",
+#     "email": "tamang.kapil11235@gmail.com",
+#     "password": "kapil123#",
+#     "password_confirmation": "kapil123#"
+# }
+###
+
+# Updating a user
+PUT http://restfulapi.com/users/1
+content-type: application/json
+
+{
+    "name": "Madan Bahadur",
+    "email": "madan@gmail.com",
+    "password": "madan123#",
+    "password_confirmation": "madan123#"
+}
+###
+
+# Deleting a user
+DELETE http://restfulapi.com/users/101
+###
+
+# Buyers Model
+
+# Getting all buyers
+GET http://restfulapi.com/buyers
+###
+
+# Getting a single buyer
+GET http://restfulapi.com/buyers/2
+###
+
+# Seller Model
+
+# Getting all sellers
+GET http://restfulapi.com/sellers
+###
+
+# Getting a single seller
+GET http://restfulapi.com/sellers/1
